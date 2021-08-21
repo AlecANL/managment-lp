@@ -1,0 +1,30 @@
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/button.css');
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #f2f2f2;
+  --baseFont: 'Be Vietnam', sans-serif;
+  --mobile-mainHeadline: bold 2.5rem / 3.125rem var(--baseFont);
+  --mobile-body1Regular: 300 1rem / 1.75rem var(--baseFont);
+  --txt-gray: #242d52;
+  --just-white: #fff;
+  --just-orange: #f3603c;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--baseFont);
+  /* background-color: var(--bg-color); */
+}
+img {
+  max-inline-size: 100%;
+}
+.wrapper {
+  max-inline-size: 1110px;
+  margin: auto;
+}

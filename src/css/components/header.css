@@ -1,0 +1,40 @@
+@import url('./navbar.css');
+
+.header {
+  position: relative;
+}
+.header-content {
+  padding-inline: 1.5rem;
+  padding-block-start: 2.8125rem;
+  padding-block-end: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header::before {
+  position: absolute;
+  content: '';
+  inline-size: 250px;
+  block-size: 21.875rem;
+  background-image: url('../../assets/images/bg-tablet-pattern.svg');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  inset-inline-end: 0;
+  inset-block-start: -20px;
+  z-index: -1;
+}
+.header-logo img {
+  vertical-align: middle;
+}
+.header-button {
+  display: none;
+}
+.icon-menu {
+  cursor: pointer;
+}
+.header-pattern {
+  /* display: none; */
+  position: absolute;
+  transform: translate(10%, 30%);
+}
