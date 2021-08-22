@@ -38,3 +38,21 @@
   position: absolute;
   transform: translate(10%, 30%);
 }
+
+@media screen and (min-width: 768px) {
+  .header-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header::before {
+    inline-size: 1000px;
+    block-size: 800px;
+    background-size: 800px;
+    z-index: -1;
+    /* inset-block-end: -20rem; */
+    inset-block-start: -5rem;
+    inset-inline-end: -15rem;
+  }
+}

@@ -1,0 +1,98 @@
+.about {
+  overflow: hidden;
+  position: relative;
+}
+.about::before {
+  position: absolute;
+  content: '';
+  inline-size: 100%;
+  block-size: 21.875rem;
+  background-image: url('../../assets/images/bg-tablet-pattern.svg');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  inset-block-end: -20rem;
+  inset-inline-end: -10rem;
+  z-index: -1;
+}
+
+.about-content {
+  padding-inline: 1.5rem;
+}
+.headline {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.line {
+  position: absolute;
+  inline-size: 100%;
+  block-size: 35px;
+  background-color: #fff0ec;
+  inset-inline-start: 1.5rem;
+}
+.headline span {
+  z-index: 10;
+  font: var(--mobile-smallBold);
+}
+.headline .number {
+  background-color: red;
+  padding-inline: 1.625rem;
+  padding-block: 0.5rem;
+  border-radius: 1.375rem;
+  z-index: 10;
+  font: var(--mobile-smallBold);
+  color: var(--just-white);
+}
+.description {
+  font: var(--mobile-body1SemiBold);
+  color: var(--txt-gray);
+  opacity: 0.5;
+  margin-block-start: 0.5rem;
+}
+.about-description__card {
+  padding-block-end: 2.8125rem;
+}
+.about-headline {
+  text-align: center;
+  padding-block-end: 3.375rem;
+}
+.about-headline h2 {
+  margin: 0;
+  font: var(--mobile-mainHeadlineSBold);
+}
+.about-headline .about-text {
+  font: var(--mobile-body1SemiBold);
+  color: var(--txt-gray);
+  opacity: 0.5;
+  padding-block-start: 0.75rem;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .about-headline {
+    text-align: start;
+  }
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .line {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-content {
+    gap: 7.8125rem;
+    padding-block: 5rem;
+  }
+  .about {
+    position: static;
+  }
+  .about::before {
+    inset-inline-start: -20rem;
+    inset-block-end: -70rem;
+    background-size: 600px;
+    block-size: 37.5rem;
+  }
+}

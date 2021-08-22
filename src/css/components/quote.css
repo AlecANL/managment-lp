@@ -1,0 +1,36 @@
+.quote {
+  position: relative;
+  background-color: var(--just-orange);
+  padding-inline: 2rem;
+}
+.quote-content {
+  text-align: center;
+  padding-block: 5.625rem;
+}
+.quote-content::before {
+  position: absolute;
+  inset-inline-start: 0;
+  content: '';
+  inline-size: 200px;
+  block-size: 21.25rem;
+  background-image: url('../../assets/images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+}
+
+.quote h2 {
+  color: var(--just-white);
+  font: 700 2.5rem / 3.125rem var(--baseFont);
+}
+@media screen and (min-width: 768px) {
+  .quote-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .quote-content h2 {
+    inline-size: 500px;
+    text-align: start;
+  }
+}

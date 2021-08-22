@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/main.css" />
@@ -27,12 +27,14 @@
             <img src="./src/assets/images/logo.svg" alt="logo manage" />
           </div>
           <img
+            id="icon-menu"
             class="icon-menu"
             src="./src/assets/images/icon-hamburger.svg"
             alt="icon hamburger"
           />
-          <nav>
-            <ul>
+          <nav class="navigation" id="navigation">
+            <div class="nav-overlay"></div>
+            <ul class="navigation-list">
               <li>
                 <a href="#">pricing</a>
               </li>
@@ -56,7 +58,7 @@
         </div>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" aria-label="hero content">
       <div class="wrapper">
         <div class="hero-content">
           <div class="hero-cover">
@@ -76,5 +78,239 @@
         </div>
       </div>
     </section>
+    <section class="about" aria-label="about content">
+      <div class="wrapper">
+        <div class="about-content">
+          <div class="about-headline">
+            <h2>What's different about Manage?</h2>
+            <p class="about-text">
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams
+            </p>
+          </div>
+          <div class="about-description">
+            <div class="about-description__card">
+              <div class="headline">
+                <span class="number">1</span>
+                <div class="line"></div>
+                <span>Track company-wide progress</span>
+              </div>
+              <p class="description">
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+            <div class="about-description__card">
+              <div class="headline">
+                <span class="number">2</span>
+                <div class="line"></div>
+                <span>Advanced built-in reports</span>
+              </div>
+              <p class="description">
+                Set internal delivery estimates and track progress company
+                goals. Our customisable dashboard helps you build out the
+                reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+            <div class="about-description__card">
+              <div class="headline">
+                <span class="number">3</span>
+                <div class="line"></div>
+                <span>Everything you need in one place</span>
+              </div>
+              <p class="description">
+                Stop jumping from one service to another to communicate, store
+                files, track task and share documents. Manage offers an all - in
+                - one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider" aria-label="slider content users opinion">
+      <div class="wrapper">
+        <div class="slider-content">
+          <h3>What they've said</h3>
+          <div class="slider-container">
+            <div class="slide slide-1">
+              <div class="slide-card">
+                <img
+                  src="./src/assets/images/avatar-ali.png"
+                  alt="avatar user"
+                />
+                <span>Ali Bravo</span>
+                <blockquote>
+                  <p>
+                    We have been able to cancel so many other subscriptions
+                    since using Manage. There is no more cross-channel confusion
+                    and everyone is much more focused.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slide slide-2">
+              <div class="slide-card">
+                <img
+                  src="./src/assets/images/avatar-anisha.png"
+                  alt="avatar user"
+                />
+                <span>Ali Bravo</span>
+                <blockquote>
+                  <p>
+                    We have been able to cancel so many other subscriptions
+                    since using Manage. There is no more cross-channel confusion
+                    and everyone is much more focused.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slide slide-3">
+              <div class="slide-card">
+                <img
+                  src="./src/assets/images/avatar-shanai.png"
+                  alt="avatar user"
+                />
+                <span>Ali Bravo</span>
+                <blockquote>
+                  <p>
+                    We have been able to cancel so many other subscriptions
+                    since using Manage. There is no more cross-channel confusion
+                    and everyone is much more focused.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="slider-controls">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div> -->
+          <button class="btn btn--is-orange is-shadow">get started</button>
+        </div>
+      </div>
+    </section>
+    <section class="quote">
+      <div class="wrapper">
+        <div class="quote-content">
+          <h2>Simplify how your team works today.</h2>
+          <button class="btn is-white">get started</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <form class="form-control">
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Updates in your inbox..."
+                aria-label="put your email"
+              />
+              <button class="btn is-orange">go</button>
+            </div>
+          </form>
+          <nav aria-label="navigation list in footer">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">about us</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">community</a>
+              </li>
+              <li>
+                <a href="#">privacy policy</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social-content">
+            <div class="social-icons">
+              <a href="#">
+                <img
+                  src="./src/assets/images/icon-facebook.svg"
+                  alt="icon facebook"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./src/assets/images/icon-youtube.svg"
+                  alt="icon youtube"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./src/assets/images/icon-twitter.svg"
+                  alt="icon twitter"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./src/assets/images/icon-pinterest.svg"
+                  alt="icon icon-pinterest"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./src/assets/images/icon-instagram.svg"
+                  alt="icon instagram"
+                />
+              </a>
+            </div>
+            <div class="logo">
+              <img
+                src="./src/assets/images/logo-white.png"
+                width="145"
+                height="23"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <p>Copyright 2021. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+    const $iconMenu = document.getElementById('icon-menu');
+    const $nav = document.getElementById('navigation');
+
+    $iconMenu.addEventListener('click', () => {
+      $nav.classList.toggle('is-active');
+    });
+    let currentSlide = 0;
+    const $slides = document.querySelectorAll('.slide');
+    $slides.forEach(($el, i) => {
+      $el.style.transform = `translateX(${100 * i}%)`;
+    });
+
+    setInterval(() => {
+      currentSlide++;
+      if (currentSlide > 2) currentSlide = 0;
+
+      $slides.forEach(($el, i) => {
+        $el.style.transform = `translateX(${100 * (i - currentSlide)}%)`;
+      });
+    }, 8000);
+  </script>
 </html>

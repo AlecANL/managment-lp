@@ -1,6 +1,70 @@
-nav {
-  display: none;
+.navigation {
+  position: absolute;
+  inset-inline: 0;
+  margin-inline: 1.5rem;
+  inset-block-start: 6rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-nav button {
+.navigation-list {
+  position: relative;
+  z-index: 100;
+  list-style-type: none;
+  background-color: var(--just-white);
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2.5rem;
+}
+.navigation-list a {
+  text-decoration: none;
+  color: var(--just-black);
+  font: var(--mobile-smallBold);
+  text-transform: capitalize;
+}
+.nav-overlay {
+  position: fixed;
+  inset-block: 0;
+  inset-inline: 0;
   display: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.0001) 0.33%,
+    rgba(0, 0, 0, 0.599049) 99.79%
+  );
+  z-index: 100;
+  pointer-events: none;
+}
+.navigation.is-active {
+  opacity: 1;
+}
+.navigation.is-active .nav-overlay {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-overlay,
+  .icon-menu {
+    display: none;
+  }
+  .navigation.is-active .nav-overlay {
+    display: none;
+  }
+  .navigation {
+    position: initial;
+    opacity: 1;
+  }
+  .navigation-list {
+    flex-direction: row;
+    padding-block: 0;
+  }
+  .navigation-list a {
+    font-weight: 500;
+  }
 }

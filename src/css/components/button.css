@@ -4,6 +4,7 @@
   padding-inline: 2rem;
   text-transform: capitalize;
   border-radius: 1.375rem;
+  cursor: pointer;
 }
 .btn:active {
   transform: scale(0.98);
@@ -11,4 +12,15 @@
 .btn--is-orange {
   color: var(--just-white);
   background-color: var(--just-orange);
+}
+.is-orange {
+  color: var(--just-white);
+  background-color: var(--just-orange);
+}
+.is-shadow {
+  box-shadow: 0px 15px 15px -10px #ff9f8e;
+}
+.is-white {
+  background-color: var(--just-white);
+  color: var(--just-orange);
 }

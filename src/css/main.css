@@ -1,6 +1,10 @@
 @import url('./components/header.css');
 @import url('./components/hero.css');
 @import url('./components/button.css');
+@import url('./components/about.css');
+@import url('./components/slider.css');
+@import url('./components/quote.css');
+@import url('./components/footer.css');
 
 * {
   box-sizing: border-box;
@@ -10,7 +14,11 @@
   --baseFont: 'Be Vietnam', sans-serif;
   --mobile-mainHeadline: bold 2.5rem / 3.125rem var(--baseFont);
   --mobile-body1Regular: 300 1rem / 1.75rem var(--baseFont);
+  --mobile-smallBold: bold 1rem / 1.25rem var(--baseFont);
+  --mobile-body1SemiBold: 400 0.875rem / 1.75rem var(--baseFont);
+  --mobile-mainHeadlineSBold: 800 1.875rem / 2.8125rem var(--baseFont);
   --txt-gray: #242d52;
+  --just-black: #1d1e25;
   --just-white: #fff;
   --just-orange: #f3603c;
 }
